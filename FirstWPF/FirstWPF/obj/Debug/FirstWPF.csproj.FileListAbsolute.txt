@@ -1,0 +1,13 @@
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\bin\Debug\FirstWPF.exe.config
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\bin\Debug\FirstWPF.exe
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\bin\Debug\FirstWPF.pdb
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\obj\Debug\FirstWPF.csprojResolveAssemblyReference.cache
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\obj\Debug\MainWindow.baml
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\obj\Debug\MainWindow.g.cs
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\obj\Debug\App.g.cs
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\obj\Debug\FirstWPF_MarkupCompile.cache
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\obj\Debug\FirstWPF.g.resources
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\obj\Debug\FirstWPF.Properties.Resources.resources
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\obj\Debug\FirstWPF.csproj.GenerateResource.Cache
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\obj\Debug\FirstWPF.exe
+c:\users\no\documents\visual studio 2013\Projects\FirstWPF\FirstWPF\obj\Debug\FirstWPF.pdb

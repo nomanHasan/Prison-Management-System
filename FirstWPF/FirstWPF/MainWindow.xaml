@@ -1,0 +1,82 @@
+﻿<Window x:Class="FirstWPF.MainWindow"
+        Background="Transparent"
+        AllowsTransparency="True"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        Title="Prison Management System v1.1" Height="800" Width="1280" WindowStyle="None">
+    <Grid Name="Main">
+        <Grid.Resources>
+            <ImageBrush x:Key="close_inact" ImageSource="UI_RES/Close_inact.png"></ImageBrush>
+            <ImageBrush x:Key="close_act" ImageSource="UI_RES/Close_act.png"></ImageBrush>
+            <ImageBrush x:Key="maximize_inact" ImageSource="UI_RES/Maximize_inact.png"></ImageBrush>
+            <ImageBrush x:Key="maximize_act" ImageSource="UI_RES/Maximize_act.png"></ImageBrush>
+            <ImageBrush x:Key="minimize_inact" ImageSource="UI_RES/Minimize_inact.png"></ImageBrush>
+            <ImageBrush x:Key="minimize_act" ImageSource="UI_RES/Minimize_act.png"></ImageBrush>
+            <ImageBrush x:Key="close_pr" ImageSource="UI_RES/Close_pr.png"></ImageBrush>
+            <ImageBrush x:Key="maximize_pr" ImageSource="UI_RES/Maximize_pr.png"></ImageBrush>
+            <ImageBrush x:Key="minimize_pr" ImageSource="UI_RES/Minimize_pr.png"></ImageBrush>
+        </Grid.Resources>
+        <Rectangle x:Name="Backg" Height="800" Width="5" VerticalAlignment="Top" HorizontalAlignment="Left" MouseDown="moveWindow">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="UI_RES/Title_top_left.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="800" Margin="5,0,5,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" MouseDown="moveWindow">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="UI_RES/Title_top_middle.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="800" Width="5" VerticalAlignment="Top" HorizontalAlignment="Right" MouseDown="moveWindow">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="UI_RES/Title_top_right.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Margin="8,4,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="56" Height="15"
+                   Fill="Transparent" MouseEnter="ActivateTitleIcons" MouseLeave="DeactivateTitleIcons"
+                   />
+        <Ellipse Margin="8,4,0,0" VerticalAlignment="TOP" HorizontalAlignment="Left" Width="14" Height="15"
+                 MouseEnter="ActivateTitleIcons" MouseLeave="DeactivateTitleIcons" MouseLeftButtonUp="EXIT" MouseLeftButtonDown="ClosePressing"
+                 Name="CloseButton" Fill="{DynamicResource close_inact}"
+                 />
+        <Ellipse Margin="29,4,0,0" VerticalAlignment="TOP" HorizontalAlignment="Left" Width="14" Height="15"
+                 MouseEnter="ActivateTitleIcons" MouseLeave="DeactivateTitleIcons" MouseLeftButtonDown="MinimizePressing" MouseLeftButtonUp="Minimize"
+                 Name="MinButton" Fill="{DynamicResource minimize_inact}"
+                 />
+        <Ellipse Margin="50,4,0,0" VerticalAlignment="TOP" HorizontalAlignment="Left" Width="14" Height="15" 
+                 MouseEnter="ActivateTitleIcons" MouseLeave="DeactivateTitleIcons" MouseLeftButtonDown="MaximizePressing" MouseLeftButtonUp="Maximize"
+                 Name="MaxButton" Fill="{DynamicResource maximize_inact}"/>
+
+        <Label Margin="400,0,390,770" Height="30" Background="Transparent" Content="Prison Management System v1.0" VerticalAlignment="TOP"
+                 HorizontalContentAlignment="Center" FontFamily="Microsoft YaHei UI" FontSize="14" MouseDown="moveWindow"
+                 ></Label>
+        <Rectangle Margin="0,90" Height="10" Width="1280" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="UI_RES/Title_top_left.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!-- From here on the xamls are window independent-->
+        
+        <Button Margin="0,512,200,238" Height="50" Width="100" Content="LOGIN" VerticalAlignment="Center"  HorizontalAlignment="Right" Background="Transparent"
+               FontFamily="Microsoft YaHei UI" FontSize="22" RenderTransformOrigin="1.34,0.42" />
+        <Rectangle  Height="50" Width="50" Margin="915,502,305,238">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="UI_RES/login7.png"></ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBox Height="30" Width="300" Background="Gray" Margin="873,321,100,439" FontSize="16"/>
+        <PasswordBox Height="30" Width="300" Background="Gray" Margin="873,405,100,355" FontSize="16"/>
+        <Label Margin="755,326,425,0" Height="30" Width="100" Background="Transparent" Content="User" VerticalAlignment="TOP"
+                 HorizontalContentAlignment="Center" FontFamily="Century Gothic" FontSize="16" MouseDown="moveWindow" BorderBrush="Teal"/>
+        <Label Margin="755,410,425,0" Height="30" Width="100" Background="Transparent" Content="Password" VerticalAlignment="TOP"
+                 HorizontalContentAlignment="Center" FontFamily="Century Gothic" FontSize="16" MouseDown="moveWindow" BorderBrush="Teal"/>
+        <Rectangle Margin="730,100,540,0" Height="680" Width="10" VerticalAlignment="Top" >
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="UI_RES/Title_top_middle.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+
+    </Grid>
+</Window>
